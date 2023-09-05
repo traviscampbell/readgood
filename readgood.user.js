@@ -29,7 +29,7 @@
       }
 
       // there are some things you just shouldn't fuck with
-      if (["A","PRE","CODE","SAMP","H1","H2","H3","H4","H5","H6"].includes(el.parentElement.tagName)) {
+      if (["PRE","CODE","SAMP","H1","H2","H3","H4","H5","H6"].includes(el.parentElement.tagName)) {
         return;
       }
 

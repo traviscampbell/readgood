@@ -2,7 +2,7 @@
 // @name         readGood.user.js
 // @author       spermic ball vat
 // @description  learn to read good and do other stuff good too
-// @version      1.0
+// @version      1.1
 // @match        *://*/*
 // @downloadURL  https://github.com/traviscampbell/readgood/raw/main/readgood.user.js
 // @updateURL    https://github.com/traviscampbell/readgood/raw/main/readgood.user.js
@@ -15,8 +15,6 @@
 
   // blesses element and its kiddos with ability to read good and do other stuff good too
   const readGooder = (el) => {
-    document.normalize();
-
     if (el.childNodes.length > 0) {
       // preach the read-gooder gospel to the kiddo's so that the may preach it to their kids
       el.childNodes.forEach((kiddo) => readGooder(kiddo));
